@@ -41,7 +41,7 @@ jobs:
         run: pnpm run pack:firefox
       - name: List releases
         run: ls -lh releases/
-      - uses: actions/attest-build-provenance@v3
+      - uses: actions/attest-build-provenance@v4
         if: startsWith(github.event.ref, 'refs/tags/')
         with:
           subject-path: releases/
