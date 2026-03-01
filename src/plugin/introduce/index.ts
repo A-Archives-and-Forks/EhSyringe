@@ -175,7 +175,7 @@ export class Introduce {
         if (!m?.[1]) return;
         const m2 = m[1].split(':');
         let namespace: EHTNamespaceName = 'temp';
-        let tag = '';
+        let tag: string;
         if (m2.length === 1) {
             tag = m2[0];
         } else {

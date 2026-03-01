@@ -61,6 +61,7 @@ export default [
                 },
             ],
             eqeqeq: [1, 'smart'],
+            'preserve-caught-error': [0],
         },
     },
     prettier,
